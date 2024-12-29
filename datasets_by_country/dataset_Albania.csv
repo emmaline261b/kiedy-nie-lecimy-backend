@@ -1,0 +1,27 @@
+Disaster_Type,Country,Subregion,Region,Start Date,End Date
+Storm,Albania,Southern Europe,Europe,2002-01-08,2002-01-08
+Epidemic,Albania,Southern Europe,Europe,2002-07-01,2002-07-23
+Flood,Albania,Southern Europe,Europe,2002-09-21,2002-10-10
+Extreme_temperature,Albania,Southern Europe,Europe,2004-07-01,2004-07-21
+Flood,Albania,Southern Europe,Europe,2004-12-04,2004-12-08
+Storm,Albania,Southern Europe,Europe,2005-01-23,2005-02-28
+Flood,Albania,Southern Europe,Europe,2005-11-30,2005-12-03
+Extreme_temperature,Albania,Southern Europe,Europe,2007-07-15,2007-07-22
+Wildfire,Albania,Southern Europe,Europe,2007-07-18,2007-07-18
+Earthquake,Albania,Southern Europe,Europe,2009-09-07,2009-09-07
+Flood,Albania,Southern Europe,Europe,2009-12-27,2010-01-08
+Flood,Albania,Southern Europe,Europe,2010-12-03,2010-12-03
+Extreme_temperature,Albania,Southern Europe,Europe,2012-01-23,2012-02-11
+Flood,Albania,Southern Europe,Europe,2015-02-01,2015-02-02
+Flood,Albania,Southern Europe,Europe,2015-01-31,2015-02-02
+Flood,Albania,Southern Europe,Europe,2015-11-21,2015-12-04
+Flood,Albania,Southern Europe,Europe,2016-11-07,2016-11-10
+Extreme_temperature,Albania,Southern Europe,Europe,2017-01-20,2017-01-20
+Flood,Albania,Southern Europe,Europe,2017-11-30,2017-12-04
+Flood,Albania,Southern Europe,Europe,2018-03-05,2018-03-09
+Earthquake,Albania,Southern Europe,Europe,2019-06-01,2019-06-01
+Earthquake,Albania,Southern Europe,Europe,2019-09-21,2019-09-21
+Earthquake,Albania,Southern Europe,Europe,2019-11-26,2019-11-26
+Flood,Albania,Southern Europe,Europe,2021-01-10,2021-01-11
+Extreme_temperature,Albania,Southern Europe,Europe,2022-05-30,2022-09-04
+Extreme_temperature,Albania,Southern Europe,Europe,2023-07-18,2023-08-22

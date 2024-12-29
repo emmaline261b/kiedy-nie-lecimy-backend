@@ -1,0 +1,10 @@
+Disaster_Type,Country,Subregion,Region,Start Date,End Date
+Drought,Armenia,Western Asia,Asia,2000-06-01,2000-07-31
+Flood,Armenia,Western Asia,Asia,2004-03-05,2004-03-09
+Storm,Armenia,Western Asia,Asia,2013-05-12,2013-05-17
+Mass_movement_wet,Armenia,Western Asia,Asia,2016-06-24,2016-06-24
+Storm,Armenia,Western Asia,Asia,2018-08-17,2018-08-18
+Storm,Armenia,Western Asia,Asia,2019-06-27,2019-06-27
+Storm,Armenia,Western Asia,Asia,2020-07-13,2020-07-13
+Storm,Armenia,Western Asia,Asia,2023-06-15,2023-06-19
+Flood,Armenia,Western Asia,Asia,2024-05-26,2024-05-26

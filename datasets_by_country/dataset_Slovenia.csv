@@ -1,0 +1,15 @@
+Disaster_Type,Country,Subregion,Region,Start Date,End Date
+Extreme_temperature,Slovenia,Southern Europe,Europe,2003-07-18,2003-08-22
+Earthquake,Slovenia,Southern Europe,Europe,2004-07-12,2004-07-12
+Flood,Slovenia,Southern Europe,Europe,2005-08-19,2005-08-24
+Storm,Slovenia,Southern Europe,Europe,2007-01-17,2007-01-18
+Storm,Slovenia,Southern Europe,Europe,2007-09-18,2007-09-20
+Flood,Slovenia,Southern Europe,Europe,2012-11-05,2012-11-06
+Extreme_temperature,Slovenia,Southern Europe,Europe,2014-01-31,2014-02-02
+Flood,Slovenia,Southern Europe,Europe,2014-09-13,2014-09-13
+Storm,Slovenia,Southern Europe,Europe,2020-02-07,2020-02-09
+Flood,Slovenia,Southern Europe,Europe,2021-09-29,2021-09-30
+Extreme_temperature,Slovenia,Southern Europe,Europe,2022-05-30,2022-09-04
+Extreme_temperature,Slovenia,Southern Europe,Europe,2023-07-18,2023-08-22
+Storm,Slovenia,Southern Europe,Europe,2023-07-18,2023-07-19
+Flood,Slovenia,Southern Europe,Europe,2023-08-03,2023-08-04

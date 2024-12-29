@@ -1,0 +1,11 @@
+Disaster_Type,Country,Subregion,Region,Start Date,End Date
+Epidemic,Sweden,Northern Europe,Europe,2002-04-22,2002-04-22
+Storm,Sweden,Northern Europe,Europe,2002-10-27,2002-10-27
+Storm,Sweden,Northern Europe,Europe,2005-01-07,2005-01-09
+Extreme_temperature,Sweden,Northern Europe,Europe,2005-12-29,2005-12-31
+Storm,Sweden,Northern Europe,Europe,2013-12-07,2013-12-07
+Wildfire,Sweden,Northern Europe,Europe,2018-07-08,2018-07-25
+Storm,Sweden,Northern Europe,Europe,2020-02-07,2020-02-09
+Flood,Sweden,Northern Europe,Europe,2021-08-17,2021-08-18
+Extreme_temperature,Sweden,Northern Europe,Europe,2022-05-30,2022-09-30
+Extreme_temperature,Sweden,Northern Europe,Europe,2023-07-23,2023-08-25

@@ -1,0 +1,6 @@
+Disaster_Type,Country,Subregion,Region,Start Date,End Date
+Earthquake,Iceland,Northern Europe,Europe,2000-06-21,2000-06-21
+Earthquake,Iceland,Northern Europe,Europe,2000-06-17,2000-06-17
+Volcanic_activity,Iceland,Northern Europe,Europe,2010-03-16,2010-04-17
+Extreme_temperature,Iceland,Northern Europe,Europe,2023-07-23,2023-08-25
+Earthquake,Iceland,Northern Europe,Europe,2023-10-25,2023-12-18

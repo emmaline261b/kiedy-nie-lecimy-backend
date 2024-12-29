@@ -1,0 +1,11 @@
+Disaster_Type,Country,Subregion,Region,Start Date,End Date
+Wildfire,Cyprus,Western Asia,Asia,2000-06-13,2000-06-13
+Extreme_temperature,Cyprus,Western Asia,Asia,2000-07-21,2000-07-17
+Drought,Cyprus,Western Asia,Asia,2000-03-01,2000-07-30
+Storm,Cyprus,Western Asia,Asia,2003-01-27,2003-01-27
+Storm,Cyprus,Western Asia,Asia,2004-01-22,2004-01-25
+Extreme_temperature,Cyprus,Western Asia,Asia,2007-06-21,2007-07-15
+Wildfire,Cyprus,Western Asia,Asia,2021-07-03,2021-07-05
+Extreme_temperature,Cyprus,Western Asia,Asia,2022-05-30,2022-09-30
+Extreme_temperature,Cyprus,Western Asia,Asia,2023-07-21,2023-08-17
+Flood,Cyprus,Western Asia,Asia,2024-02-12,2024-02-13

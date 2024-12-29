@@ -1,0 +1,24 @@
+Disaster_Type,Country,Subregion,Region,Start Date,End Date
+Drought,Georgia,Western Asia,Asia,2000-08-01,2001-05-31
+Storm,Georgia,Western Asia,Asia,2001-02-19,2001-02-19
+Earthquake,Georgia,Western Asia,Asia,2002-04-25,2002-04-25
+Flood,Georgia,Western Asia,Asia,2004-03-05,2004-03-09
+Flood,Georgia,Western Asia,Asia,2004-07-15,2004-07-20
+Flood,Georgia,Western Asia,Asia,2005-04-23,2005-04-28
+Flood,Georgia,Western Asia,Asia,2006-04-15,2006-04-24
+Earthquake,Georgia,Western Asia,Asia,2009-09-07,2009-09-07
+Flood,Georgia,Western Asia,Asia,2011-06-12,2011-06-22
+Flood,Georgia,Western Asia,Asia,2012-05-12,2012-05-16
+Storm,Georgia,Western Asia,Asia,2012-07-19,2012-07-19
+Flood,Georgia,Western Asia,Asia,2013-07-19,2013-07-29
+Flood,Georgia,Western Asia,Asia,2013-08-17,2013-08-18
+Storm,Georgia,Western Asia,Asia,2013-03-24,2013-03-24
+Flood,Georgia,Western Asia,Asia,2014-09-21,2014-09-24
+Flood,Georgia,Western Asia,Asia,2015-06-07,2015-06-15
+Flood,Georgia,Western Asia,Asia,2018-07-05,2018-07-05
+Flood,Georgia,Western Asia,Asia,2019-05-12,2019-05-12
+Flood,Georgia,Western Asia,Asia,2020-07-29,2020-08-03
+Flood,Georgia,Western Asia,Asia,2021-09-22,2021-09-24
+Flood,Georgia,Western Asia,Asia,2022-06-21,2022-06-26
+Flood,Georgia,Western Asia,Asia,2023-06-15,2023-06-16
+Mass_movement_wet,Georgia,Western Asia,Asia,2023-08-03,2023-08-03

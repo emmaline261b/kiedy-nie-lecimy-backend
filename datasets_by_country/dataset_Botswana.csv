@@ -1,0 +1,15 @@
+Disaster_Type,Country,Subregion,Region,Start Date,End Date
+Flood,Botswana,Sub-Saharan Africa,Africa,2000-02-12,2000-02-17
+Flood,Botswana,Sub-Saharan Africa,Africa,2004-02-01,2004-06-02
+Epidemic,Botswana,Sub-Saharan Africa,Africa,2006-01-10,2006-04-16
+Epidemic,Botswana,Sub-Saharan Africa,Africa,2008-11-01,2009-05-24
+Flood,Botswana,Sub-Saharan Africa,Africa,2009-03-13,2009-03-17
+Flood,Botswana,Sub-Saharan Africa,Africa,2009-05-10,2009-07-01
+Storm,Botswana,Sub-Saharan Africa,Africa,2009-12-05,2009-12-05
+Flood,Botswana,Sub-Saharan Africa,Africa,2011-03-13,2011-03-17
+Flood,Botswana,Sub-Saharan Africa,Africa,2013-01-16,2013-01-23
+Drought,Botswana,Sub-Saharan Africa,Africa,2015-07-01,2015-12-31
+Flood,Botswana,Sub-Saharan Africa,Africa,2017-02-18,2017-02-23
+Flood,Botswana,Sub-Saharan Africa,Africa,2018-02-23,2018-03-22
+Drought,Botswana,Sub-Saharan Africa,Africa,2019-05-01,2019-12-23
+Drought,Botswana,Sub-Saharan Africa,Africa,2023-07-01,2024-06-30
