@@ -173,3 +173,4 @@ cython_debug/
 .idea/*
 .DS_Store
 resources/.DS_Store
+output/*

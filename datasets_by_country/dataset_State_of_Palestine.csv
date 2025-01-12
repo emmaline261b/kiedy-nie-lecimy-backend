@@ -1,9 +1,0 @@
-Disaster_Type,Country,Subregion,Region,Start Date,End Date
-Flood,State of Palestine,Western Asia,Asia,2010-01-18,2010-01-19
-Flood,State of Palestine,Western Asia,Asia,2012-02-28,2012-03-02
-Flood,State of Palestine,Western Asia,Asia,2013-01-08,2013-01-10
-Storm,State of Palestine,Western Asia,Asia,2013-12-09,2013-12-19
-Storm,State of Palestine,Western Asia,Asia,2015-01-07,2015-01-10
-Storm,State of Palestine,Western Asia,Asia,2015-02-19,2015-02-22
-Extreme_temperature,State of Palestine,Western Asia,Asia,2020-01-18,2020-02-05
-Extreme_temperature,State of Palestine,Western Asia,Asia,2022-01-26,2022-01-31
