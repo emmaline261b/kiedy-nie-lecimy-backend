@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from keras.src.optimizers import Adam
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.optimizers import RMSprop
@@ -16,7 +17,7 @@ class MultiClassClassificationModel:
         self.model = None
         self.early_stopping = None
 
-    def create_early_stopping(self, monitor='val_loss', patience=5, restore_best_weights=True, verbose=1):
+    def create_early_stopping(self, monitor='val_loss', patience=10, restore_best_weights=True, verbose=1):
         return EarlyStopping(
             monitor=monitor,
             patience=patience,
@@ -51,6 +52,20 @@ class MultiClassClassificationModel:
         country_df = pd.DataFrame(country_encoded, columns=[f"country_{label}" for label in country_labels])
         self.data = pd.concat([self.data, country_df], axis=1)
 
+        # kodowanie regionów i subregionów
+        region_encoder = OneHotEncoder(sparse_output=False)
+        region_encoded = region_encoder.fit_transform(self.data[['region']])
+        region_labels = region_encoder.categories_[0]
+
+        subregion_encoder = OneHotEncoder(sparse_output=False)
+        subregion_encoded = subregion_encoder.fit_transform(self.data[['subregion']])
+        subregion_labels = subregion_encoder.categories_[0]
+
+        # dodanie kodowanych regionów i subregionów do danych
+        region_df = pd.DataFrame(region_encoded, columns=[f"region_{label}" for label in region_labels])
+        subregion_df = pd.DataFrame(subregion_encoded, columns=[f"subregion_{label}" for label in subregion_labels])
+        self.data = pd.concat([self.data, region_df, subregion_df], axis=1)
+
         # zapisywanie encoderów
         os.makedirs("output", exist_ok=True)
         with open("output/disaster_encoder.pkl", 'wb') as file:
@@ -61,8 +76,20 @@ class MultiClassClassificationModel:
             pickle.dump(country_encoder, file)
         print("country encoder zapisano do pliku: output/country_encoder.pkl")
 
+        with open("output/region_encoder.pkl", 'wb') as file:
+            pickle.dump(region_encoder, file)
+        print("region encoder zapisano do pliku: output/region_encoder.pkl")
+
+        with open("output/subregion_encoder.pkl", 'wb') as file:
+            pickle.dump(subregion_encoder, file)
+        print("subregion encoder zapisano do pliku: output/subregion_encoder.pkl")
+
         # tworzenie x i y
-        feature_columns = ['day_of_year_scaled', 'sin_day_of_year_scaled', 'cos_day_of_year_scaled'] + [f"country_{label}" for label in country_labels]
+        feature_columns = ['day_of_year_scaled', 'sin_day_of_year_scaled', 'cos_day_of_year_scaled'] + \
+                          [f"country_{label}" for label in country_labels] + \
+                          [f"region_{label}" for label in region_labels] + \
+                          [f"subregion_{label}" for label in subregion_labels]
+
         x = self.data[feature_columns]
         y = disaster_types
 
@@ -78,6 +105,7 @@ class MultiClassClassificationModel:
         return x_train, x_test, y_train, y_test
 
     def build_model(self, input_shape, output_shape):
+
         model = Sequential()
         model.add(Dense(256, input_shape=(input_shape,), activation='relu', kernel_regularizer='l2'))
         model.add(Dropout(0.3))
@@ -85,10 +113,10 @@ class MultiClassClassificationModel:
         model.add(Dropout(0.3))
         model.add(Dense(output_shape, activation='softmax'))
 
-        model.compile(optimizer=RMSprop(learning_rate=0.0001), loss='categorical_crossentropy', metrics=['accuracy'])
+        model.compile(optimizer=RMSprop(learning_rate=0.001), loss='categorical_crossentropy', metrics=['accuracy'])
         self.model = model
 
-    def train_model(self, x_train, y_train, epochs=50, batch_size=32, callbacks=None):
+    def train_model(self, x_train, y_train, epochs=200, batch_size=32, callbacks=None):
         if callbacks is None:
             callbacks = [self.create_early_stopping()]
 

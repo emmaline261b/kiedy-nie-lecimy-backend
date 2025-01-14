@@ -69,6 +69,14 @@ class DisasterPredictor:
         # Znalezienie top 3 wyników
         top_indices = np.argsort(probabilities[0])[-3:][::-1]
         disaster_labels = self.disaster_encoder.categories_[0]
-        top_disasters = [(disaster_labels[i], probabilities[0][i]) for i in top_indices]
 
-        return top_disasters
+        # Konwersja wyników na bardziej czytelny format
+        top_disasters = [
+            {
+                "disaster": disaster_labels[i],
+                "probability": f"{probabilities[0][i] * 100:.2f}%"  # Formatowanie jako procenty
+            }
+            for i in top_indices
+        ]
+
+        return {"response": top_disasters}

@@ -12,37 +12,36 @@ from multi_class_classification_neural_network_modelling import MultiClassClassi
 
 import pickle
 
+# Inicjalizacja i wczytanie danych
+preprocessor = DisasterDataPreprocessor('resources/EMDAT-disaster-dataset-2000-2024-cleaned.csv')
+preprocessor.load_data()
 
-# # Inicjalizacja i wczytanie danych
-# preprocessor = DisasterDataPreprocessor('resources/EMDAT-disaster-dataset-2000-2024-cleaned.csv')
-# preprocessor.load_data()
-#
-# # Przetwarzanie danych
-# preprocessor.preprocess()
-#
-# #zapisz do pliku na wszelki wypadek
-# preprocessor.save_to_csv()
-#
-# # Pobranie przetworzonych danych
-# processed_data = preprocessor.get_data()
-#
-# #====================================================
-# #TWORZENIE SZEREGU CZASOWEGO
-# #====================================================
-#
-# # Inicjalizacja preprocesora
-# preprocessor = DisasterTimeSeriesPreprocessor(processed_data)
-#
-# # Przetwarzanie danych
-# processed_time_series = preprocessor.preprocess()
-#
-# #====================================================
-# #MODELOWANIE
-# #====================================================
-#
-# # Użycie klasy
-# model = MultiClassClassificationModel(processed_time_series)
-# encoder = model.run()
+# Przetwarzanie danych
+preprocessor.preprocess()
+
+#zapisz do pliku na wszelki wypadek
+preprocessor.save_to_csv()
+
+# Pobranie przetworzonych danych
+processed_data = preprocessor.get_data()
+
+#====================================================
+#TWORZENIE SZEREGU CZASOWEGO
+#====================================================
+
+# Inicjalizacja preprocesora
+preprocessor = DisasterTimeSeriesPreprocessor(processed_data)
+
+# Przetwarzanie danych
+processed_time_series = preprocessor.preprocess()
+
+#====================================================
+#MODELOWANIE
+#====================================================
+
+# Użycie klasy
+model = MultiClassClassificationModel(processed_time_series)
+encoder = model.run()
 
 #====================================================
 #PRZYKŁADOWE UŻYCIE
@@ -54,6 +53,6 @@ with open("output/country_encoder.pkl", "rb") as file:
 
 # Inicjalizacja predyktora
 predictor = DisasterPredictor()
-future_date = date(2025, 1, 12)
-results = predictor.predict("Poland", future_date)
+future_date = date(2025, 7, 12)
+results = predictor.predict("Japan", future_date)
 print("Top 3 przewidywane katastrofy:", results)
